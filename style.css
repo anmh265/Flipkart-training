@@ -11,6 +11,9 @@
     font-family: roboto-medium;
     src: url('https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/fonts/roboto-medium-webfont.woff2');
 }
+body{
+    background-color: #f1f3f6;
+}
 header{
     background-color: #2874f0;
     width: 100%;
@@ -138,4 +141,211 @@ header{
     width: 16px;
     height: 16px;
     margin-inline: 8px;
+}
+.header-nav{
+    height: 40px;
+    background-color: white;
+    box-shadow: 0 1px 1px 0 rgb(0, 0, 0, 0.16);
+}
+.header-nav nav{
+    max-width: 1248px;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    transform: translateX(-3px);
+}
+.header-nav nav span{
+    font-size: 14px;
+    line-height: 1.4;
+    font-family: roboto-medium;
+    font-weight: 500;
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-right: 10px;
+}
+.header-nav nav span svg{
+    transform: rotate(270deg);
+    fill: #878787;
+    opacity: 0.5;
+    margin-left: 8px;
+}
+main{
+    max-width: 1680px;
+    min-width: 978px;
+    margin-inline: auto;
+    padding: 8px 1px;
+    display: flex;
+}
+.main-grabdeals-filter{
+    padding-right: 10px;
+}
+.grab-best-mobile{
+    width: 270px;
+    box-shadow: 0 1px 8px 0 rgb(0, 0, 0, 0.06);
+    background-color: white;
+    margin-bottom: 10px;
+}
+.best-mobile-img{
+    height: 144.5px;
+}
+.best-mobile-img img{
+    width: 100%;
+}
+.best-mobile-text{
+    padding: 12px 16px 15px 15px;
+    border-top: 1px solid #f0f0f0;
+}
+.best-mobile-main-text{
+    font-size: 16px;
+    line-height: 1.2;
+    font-family: roboto-medium;
+    margin-top: 2px;
+}
+.best-mobile-sub-text{
+    font-size: 12px;
+    line-height: 1.4;
+    font-family: roboto-regular;
+    margin-top: 2px;
+}
+.filter{
+    width: 270px;
+    background-color: white;
+    box-shadow: 0 1px 8px 0 rgb(0, 0, 0, 0.06);
+}
+.filter h2{
+    padding: 18px 15px 14px;
+    font-size: 18px;
+    font-family: roboto-medium;
+    font-weight: 500;
+    border-bottom: 1px solid #f0f0f0;
+    letter-spacing: 0.03ch;
+}
+.filter-categories{
+    padding: 17px 16px 16px;
+    border-bottom: 1px solid #f0f0f0;
+}
+.filter-categories p{
+    font-size: 12px;
+    color: #212121;
+    font-family: roboto-medium;
+    margin-bottom: 7px;
+    margin-left: -1px;
+}
+.categories-mobiles-accessories{
+    padding-block: 5px;
+    color: #878787;
+}
+.categories-text{
+    font-size: 14px;
+    font-family: roboto-regular;
+}
+.categories-mobile{
+    font-size: 14px;
+    font-family: roboto-medium;
+    padding-block: 7px;
+    margin-left: 14px;
+}
+.categories-price{
+    padding: 17px 16px 16px 15px;
+}
+.categories-price p{
+    font-size: 13px;
+    line-height: 1.4;
+    font-family: roboto-medium;
+    letter-spacing: 0.04ch;
+    margin-bottom: 5px;
+}
+.price-graph{
+    height: 23px;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+}
+.graph-one, .graph-two, .graph-three, .graph-four, .graph-five{
+    height: 100%;
+    width: 47.362px;
+    background-color: #e0e0e0;
+}
+.graph-five{
+    height: 19.875px;
+}
+.price-range{
+    width: 100%;
+    height: 6px;
+    background-color: #2874f0;
+    position: relative;
+}
+.price-range::before{
+    content: "";
+    position: absolute;
+    height: 11px;
+    width: 11px;
+    left: -6px;
+    top: -4px;
+    border-radius: 50%;
+    border: 1px solid #bababa;
+    background-color: white;
+}
+.price-range::after{
+    content: "";
+    position: absolute;
+    height: 11px;
+    width: 11px;
+    right: -5px;
+    top: -4px;
+    border-radius: 50%;
+    border: 1px solid #bababa;
+    background-color: white;
+}
+.price-graph-dots{
+    transform: translateY(-2px);
+}
+.price-graph-dots span{
+    width: 43.6px;
+    display: inline-block;
+    text-align: left;
+    color: #c2c2c2;
+}
+.price-graph-dots span:last-child{
+    width: 0px;
+}
+.price-min-max{
+    margin: 6px -4px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.price-min, .price-max{
+    height: 24px;
+    border: 1px solid #e0e0e0;
+    background-color: white;
+    font-size: 14px;
+    color: #212121;
+    -webkit-appearance: none;
+    background-image: url(./Assets/solid-down-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+    padding-inline: 5px;
+    outline: none;
+}
+.price-min{
+    width: 99px;
+}
+.price-min-max span{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-inline: 12px;
+    font-size: 14px;
+    color: #878787;
+    font-family: roboto-regular;
+}
+.price-max{
+    margin-left: 1.5px;
+    width: 108px;
 }
