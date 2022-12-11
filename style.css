@@ -538,3 +538,30 @@ main{
     width: 6px;
     margin-left: 4px;
 }
+.mobile-main-section{
+    flex: 1 0;
+    background-color: white;
+}
+.mi-category-section{
+    padding: 12px 16px 0;
+}
+.navigation-category-section{
+    display: inline-flex;
+    font-size: 12px;
+    font-family: roboto-regular;
+    align-items: center;
+    margin-right: -4px;
+}
+.navigation-category-section a{
+    max-width: 80px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-decoration: none;
+    color: #878787;
+}
+.navigation-category-section svg{
+    height: 7px;
+    width: 20px;
+    transform: rotate(180deg);
+}
